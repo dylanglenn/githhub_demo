@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5c0677f9-e317-402b-92cd-21444169daf0",
+		"_postman_id": "9d565741-989e-4389-a0d8-39bfa85d4fd1",
 		"name": "UserAPI - Test Suite",
 		"description": "API to create and manage user data. It allows users to register, login and get/update/delete their data.\n\nThis test suite verifies that all the endpoints of the API are working correctly.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "29574936-5c0677f9-e317-402b-92cd-21444169daf0"
+		"_uid": "29574936-9d565741-989e-4389-a0d8-39bfa85d4fd1"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "e4f1a011-dd94-41d4-9f40-81691e67e3dd",
+						"id": "a35111e0-2180-41b7-b184-e32dd5d8a3f0",
 						"exec": [
 							"pm.variables.set(\"rUserName\", pm.variables.replaceIn('{{$randomUserName}}'));"
 						],
@@ -23,7 +23,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9872d225-7fac-496c-9b9d-f1f5a442734f",
+						"id": "aabdee36-a483-4681-b774-f7bec9cb7f7c",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"",
@@ -48,7 +48,7 @@
 					}
 				}
 			],
-			"id": "bc90583d-6fd7-4f70-959b-93c9ad6305e9",
+			"id": "2eefee61-7522-46b0-9ef3-1a6c1ff3cdc9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -88,7 +88,7 @@
 			},
 			"response": [
 				{
-					"id": "9313dc57-04bf-4112-9c94-1892743de3bd",
+					"id": "2abe991d-66e3-41d0-84a3-5916f11f0db4",
 					"name": "User registered successfully",
 					"originalRequest": {
 						"method": "POST",
@@ -139,7 +139,7 @@
 					"body": "{\n  \"id\": \"<integer>\",\n  \"username\": \"<string>\",\n  \"token\": \"<string>\"\n}"
 				},
 				{
-					"id": "b9ac7c12-9d58-4daa-a3f6-34a382b83e85",
+					"id": "6841bf00-9be5-4b1d-93bb-4cf6155b847b",
 					"name": "Error occurred",
 					"originalRequest": {
 						"method": "POST",
@@ -200,7 +200,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f6432db5-eadd-4666-a6b3-34412d5662a6",
+						"id": "65329112-a472-410c-9d93-ad8bed735381",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"",
@@ -227,7 +227,7 @@
 					}
 				}
 			],
-			"id": "235c0b38-f2fc-4c12-b1eb-6e5818ce4bd3",
+			"id": "9f4e0fae-42c1-4389-bf0e-49635e5c1c6d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -267,7 +267,7 @@
 			},
 			"response": [
 				{
-					"id": "cd4c1665-f528-4f10-8d69-74799bba6bae",
+					"id": "f0fe794f-1a2d-45ac-8ad7-cc91a15bc756",
 					"name": "User logged in successfully",
 					"originalRequest": {
 						"method": "POST",
@@ -318,7 +318,7 @@
 					"body": "{\n  \"id\": \"<integer>\",\n  \"username\": \"<string>\",\n  \"token\": \"<string>\"\n}"
 				},
 				{
-					"id": "20afc1e6-6733-47cf-9143-a6e12c37ffc2",
+					"id": "cbff5ff4-c2eb-4250-a0bd-09caf4b5e04b",
 					"name": "Unauthorized",
 					"originalRequest": {
 						"method": "POST",
@@ -372,7 +372,7 @@
 					"body": "{\n  \"message\": \"<string>\"\n}"
 				},
 				{
-					"id": "73009523-9c51-42fb-a311-5f8f447c3b63",
+					"id": "1c0b5d36-4947-4cc8-a9aa-d68f9e6f549e",
 					"name": "Error occurred",
 					"originalRequest": {
 						"method": "POST",
@@ -433,7 +433,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d455f800-d562-457e-abf4-99938edaa1af",
+						"id": "326de299-29e2-41d5-bf24-491527d4b950",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"",
@@ -453,7 +453,7 @@
 					}
 				}
 			],
-			"id": "2d61cfc0-62d4-4025-a3da-94883b746300",
+			"id": "f71c901f-7292-4dcf-a06d-6e30610d8139",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -485,7 +485,7 @@
 			},
 			"response": [
 				{
-					"id": "82b364b5-2f30-4107-b24c-cc7d5f4ce44f",
+					"id": "adab3c05-dcf8-48d9-a330-3e2ece9d230e",
 					"name": "Successful operation",
 					"originalRequest": {
 						"method": "GET",
@@ -527,7 +527,7 @@
 					"body": "{\n  \"id\": \"<integer>\",\n  \"username\": \"<string>\"\n}"
 				},
 				{
-					"id": "8f2cf44d-609b-4469-960f-e435c3dac5b7",
+					"id": "2d5de9e1-cdf6-4ee8-9817-be2a57264994",
 					"name": "User not found",
 					"originalRequest": {
 						"method": "GET",
@@ -572,7 +572,7 @@
 					"body": "{\n  \"message\": \"<string>\"\n}"
 				},
 				{
-					"id": "4a238e05-3880-4474-8865-3f87b831421e",
+					"id": "94e929eb-266c-4e54-a2c5-b964e2c7b468",
 					"name": "Error occurred",
 					"originalRequest": {
 						"method": "GET",
@@ -620,7 +620,7 @@
 		},
 		{
 			"name": "Update a user",
-			"id": "ae6c18d6-9246-4e8e-b69d-eb7a17da5adf",
+			"id": "c58f162d-9007-4e65-84c3-ef409a9579f3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -666,7 +666,7 @@
 			},
 			"response": [
 				{
-					"id": "fc27d2f9-e019-49d0-8548-256d01a8bbc8",
+					"id": "80490b05-e318-4c3d-a66c-2f92c846f969",
 					"name": "User updated successfully",
 					"originalRequest": {
 						"method": "PUT",
@@ -725,7 +725,7 @@
 					"body": "{\n  \"message\": \"<string>\"\n}"
 				},
 				{
-					"id": "57688e32-d57e-4c61-bc26-3cce0389ef74",
+					"id": "1c5e06d2-5af0-417d-95ba-d9875466881e",
 					"name": "Error occurred",
 					"originalRequest": {
 						"method": "PUT",
@@ -787,7 +787,7 @@
 		},
 		{
 			"name": "Delete a user",
-			"id": "99766f35-0078-443c-8ea1-bb988ec03fb5",
+			"id": "cac07fb8-2d91-45f7-9b76-6fbb72e15087",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -819,7 +819,7 @@
 			},
 			"response": [
 				{
-					"id": "9a78f2a4-7d0f-4cf8-8af2-a768773fd5aa",
+					"id": "5c9fc66e-0b41-45c9-af8d-5ecec8e2ebc7",
 					"name": "User deleted successfully",
 					"originalRequest": {
 						"method": "DELETE",
@@ -864,7 +864,7 @@
 					"body": "{\n  \"message\": \"<string>\"\n}"
 				},
 				{
-					"id": "2b6ab19d-461d-46d1-b2c2-4f7c171616e4",
+					"id": "5051cebe-16f4-4168-a9f5-64422d2e82a5",
 					"name": "Error occurred",
 					"originalRequest": {
 						"method": "DELETE",
@@ -935,7 +935,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ea16cdf1-a8c6-4ff3-837f-9b9c0259f9fb",
+				"id": "ef4ab0b6-6be9-42ee-8657-0df0c40ae730",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -945,7 +945,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b29639ff-c974-4503-bfde-50df079f7fef",
+				"id": "9c02c320-2ea7-4120-87ad-5e02d116d7a1",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Response time is less than 800ms\", function () {",
